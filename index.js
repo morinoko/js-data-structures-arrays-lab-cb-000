@@ -1,6 +1,7 @@
 // Write your solution here!
 const drivers = ['Milo', 'Otis', 'Garfield'];
 
+// these methods modify the original array
 function destructivelyAppendDriver(name) {
   drivers.push(name);
 }
@@ -17,6 +18,7 @@ function destructivelyRemoveFirstDriver() {
   drivers.shift();
 }
 
+// Below methods leave the original array in tact
 function appendDriver(name) {
   return [...drivers, name];
 }
